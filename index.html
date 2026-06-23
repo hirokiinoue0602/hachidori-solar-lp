@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京都戸建向け 自宅発電・蓄電LPサンプル</title>
+    <meta
+      name="description"
+      content="東京都の戸建にお住まいのハチドリ電力契約者向けに、自宅で電気をつくり、貯める暮らしと無料シミュレーションへ案内するLPサンプルです。"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260624-064955" />
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m13 6 6 6-6 6" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" />
+      </symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M3 11 12 3l9 8" />
+        <path d="M5 10v10h14V10" />
+        <path d="M9 20v-6h6v6" />
+      </symbol>
+      <symbol id="icon-battery" viewBox="0 0 24 24">
+        <path d="M4 8h15v8H4z" />
+        <path d="M19 11h2v2h-2" />
+        <path d="M7 11h4" />
+      </symbol>
+      <symbol id="icon-bolt" viewBox="0 0 24 24">
+        <path d="m13 2-8 12h7l-1 8 8-12h-7l1-8Z" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m4 12 5 5L20 6" />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 5 6v6c0 4.6 2.8 7.4 7 9 4.2-1.6 7-4.4 7-9V6l-7-3Z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24">
+        <path d="M20 4C11 5 6 10 5 19c8-1 13-6 15-15Z" />
+        <path d="M5 19c3.2-4.5 6.5-7.5 11-10" />
+      </symbol>
+      <symbol id="icon-yen" viewBox="0 0 24 24">
+        <path d="m6 4 6 8 6-8" />
+        <path d="M8 13h8M8 17h8M12 12v8" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M5 5h14v10H9l-4 4V5Z" />
+        <path d="M8 9h8M8 12h5" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M5 21a7 7 0 0 1 14 0" />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </symbol>
+      <symbol id="icon-calculator" viewBox="0 0 24 24">
+        <rect x="4" y="3" width="16" height="18" rx="2" />
+        <path d="M8 7h8M8 11h2M12 11h2M16 11h.01M8 15h2M12 15h2M16 15h.01" />
+      </symbol>
+      <symbol id="icon-clipboard" viewBox="0 0 24 24">
+        <path d="M9 4h6l1 2h3v15H5V6h3l1-2Z" />
+        <path d="M9 11h6M9 15h4" />
+      </symbol>
+      <symbol id="icon-tools" viewBox="0 0 24 24">
+        <path d="M14.7 6.3a4 4 0 0 0 5 5L12 19l-4-4 7.7-8.7Z" />
+        <path d="M4 20l4-4" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#top" aria-label="ページ上部へ戻る">
+        <img src="./images/logo.png" alt="ハチドリ電力" />
+      </a>
+      <nav class="header-nav" aria-label="ページ内ナビゲーション">
+        <a href="#benefit">メリット</a>
+        <a href="#voice">お客さまの声</a>
+        <a href="#flow">始め方</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero-image">
+          <img src="./images/main.png?v=20260622-100722" alt="家族がリビングで過ごすあたたかな暮らし" />
+        </picture>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            ソーラー+蓄電池で<br />電気代を節約する<br class="mobile-break" /><span class="nobr">暮らしへ</span>
+          </h1>
+          <ul class="hero-badges" aria-label="ソーラーと蓄電池の主なメリット">
+            <li class="hero-badge hero-badge-savings"><span>電気代</span><strong>80%削減</strong></li>
+            <li class="hero-badge hero-badge-battery"><span>蓄電池で</span><strong>災害時も安心</strong></li>
+            <li class="hero-badge hero-badge-subsidy"><span>補助金で</span><strong>お得</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section solar-overview" aria-labelledby="solar-overview-title">
+        <div class="overview-panel">
+          <div class="overview-copy">
+            <p class="eyebrow">HOME ENERGY</p>
+            <h2 id="solar-overview-title">電気代を抑えながら、<br />災害時の備えにも。</h2>
+            <p class="overview-lead">
+              太陽光発電と蓄電池があれば、毎日使う電気をつくり、ためて活用することができます。<br />
+              電気を「買う」だけでなく、「つくる」「ためる」という選択肢を持つことが、これからの暮らしの安心につながります。
+            </p>
+          </div>
+          <div class="overview-points" aria-label="自宅発電でできること">
+            <article>
+              <figure class="overview-point-image">
+                <img src="./images/image1.png" alt="屋根に太陽光パネルを設置する様子" />
+              </figure>
+              <div class="overview-point-body">
+                <span class="merit-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-sun" /></svg>
+                  メリット 1
+                </span>
+                <strong>屋根でつくり電気代を削減</strong>
+                <p>太陽光パネルで、日中の電気を発電します。</p>
+              </div>
+            </article>
+            <article>
+              <figure class="overview-point-image">
+                <img src="./images/image4.png?v=20260620-132653" alt="停電時にも照明のあるリビングで過ごす家族" />
+              </figure>
+              <div class="overview-point-body">
+                <span class="merit-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-shield" /></svg>
+                  メリット 2
+                </span>
+                <strong>停電時も安心</strong>
+                <p>災害や万が一の停電時でも、冷蔵庫や照明など生活に必要な電気を確保できます。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section energy-map" id="benefit" aria-labelledby="benefit-title">
+        <div class="section-head compact">
+          <p class="eyebrow">WITH HACHIDORI</p>
+          <h2 id="benefit-title">つくる・ためる。<br />使う電気をできるだけ自宅でまかなう。</h2>
+        </div>
+        <div class="market-panel" aria-label="自宅でまかなう電気と節約のイメージ">
+          <div class="market-image-grid">
+            <figure class="market-figure">
+              <img src="./images/setsuyaku.png" alt="30年で約548万円お得になる電気代削減イメージ" />
+            </figure>
+            <figure class="market-figure">
+              <img src="./images/gragh.png" alt="太陽光と蓄電池でエネルギー自給率80%を目指すイメージ" />
+            </figure>
+          </div>
+          <details class="simulation-conditions">
+            <summary>試算条件</summary>
+            <dl>
+              <div>
+                <dt>契約電力プラン</dt>
+                <dd>従量電灯B</dd>
+              </div>
+              <div>
+                <dt>電気使用量</dt>
+                <dd>530kWh（25年7月想定）</dd>
+              </div>
+              <div>
+                <dt>太陽光パネル容量</dt>
+                <dd>6.83kW</dd>
+              </div>
+              <div>
+                <dt>蓄電池容量</dt>
+                <dd>20.47kWh</dd>
+              </div>
+              <div>
+                <dt>リース料金（税込）</dt>
+                <dd>23,364円</dd>
+              </div>
+              <div>
+                <dt>余剰電力売電</dt>
+                <dd>なし</dd>
+              </div>
+              <div>
+                <dt>燃料調整費単価</dt>
+                <dd>6.79円（3年分の平均）</dd>
+              </div>
+              <div>
+                <dt>電気代上昇率</dt>
+                <dd>年1％上昇</dd>
+              </div>
+              <div>
+                <dt>年間供給電力量（太陽光＋蓄電池）</dt>
+                <dd>7,417kWh</dd>
+              </div>
+              <div>
+                <dt>年間電力消費量</dt>
+                <dd>7,827kWh</dd>
+              </div>
+              <div>
+                <dt>エネルギー自給率</dt>
+                <dd>95%</dd>
+              </div>
+            </dl>
+          </details>
+        </div>
+      </section>
+
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="section-head">
+          <p class="eyebrow">TOKYO SUBSIDY</p>
+          <h2 id="intro-title">東京都の補助金で、<br />「電気をつくる暮らし」を<br />もっと身近に。</h2>
+        </div>
+        <div class="intro-grid">
+          <div class="grant-visual" id="grant">
+            <div class="grant-summary">
+              <h3>条件が合えば、導入時の負担を大きく抑えられる可能性があります。</h3>
+              <div class="grant-points" aria-label="導入費用の目安">
+                <div>
+                  <span>通常費用の目安</span>
+                  <strong>約200万円</strong>
+                </div>
+                <div>
+                  <span>補助金活用後の目安</span>
+                  <strong>約100万円</strong>
+                </div>
+              </div>
+            </div>
+            <figure class="grant-image">
+              <img src="./images/discount.png?v=20260624-062729" alt="通常200万円の導入費用が、補助金の活用で100万円おトクになり、100万円になる図" />
+            </figure>
+            <ul class="subsidy-fineprint">
+              <li>表示は太陽光パネル・蓄電池等を含む導入費用の一例です。</li>
+              <li>実際の費用・補助額は、設備内容、容量、対象機器、申請時期、区市町村補助の有無、審査・予算状況により異なります。</li>
+              <li>必ず半額になるものではありません。2026年6月時点の参考情報です。</li>
+            </ul>
+            <a class="grant-source" href="https://www.kankyo.metro.tokyo.lg.jp/climate/solar_portal/subsidy" target="_blank" rel="noreferrer">東京都の公式情報を確認する</a>
+            <div class="grant-lease-note">
+              <span class="grant-lease-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-yen" /></svg></span>
+              <div>
+                <strong>初期費用0円で始められるリースプランも。</strong>
+                <p>月々のリース料を、電気代の削減分でどれくらいまかなえるか無料シミュレーションで確認できます。</p>
+              </div>
+            </div>
+            <div class="grant-cta">
+              <a href="#form">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg>
+                <span class="cta-text">無料でシミュレーション</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="voice-section" id="voice" aria-labelledby="voice-title">
+        <div class="section-head compact">
+          <p class="eyebrow">USER VOICE</p>
+          <h2 id="voice-title">利用者の声</h2>
+        </div>
+        <div class="voice-grid">
+          <article class="voice-card">
+            <div class="voice-meta">
+              <span class="voice-person-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-user" /></svg></span>
+              <span class="voice-index">VOICE 01</span>
+            </div>
+            <div class="voice-quote-icon" aria-hidden="true">“</div>
+            <p>3人の子どもたちとの新生活のため、念願のマイホームを建築。高気密高断熱の家にこだわっていたので、ソーラーパネルも環境配慮型のハチドリソーラーを選択。</p>
+            <p>単なる節約ではなく、自然エネルギーで社会を良くしていくという考え方が、自分たちの価値観とぴったり合いました。</p>
+            <p>また、初期費用0円というのも大きかったです。新築は何かとお金がかかるので、導入しやすさは重要でした。担当の方の説明も分かりやすく丁寧で、不安なく決断できました。</p>
+          </article>
+          <article class="voice-card">
+            <div class="voice-meta">
+              <span class="voice-person-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-user" /></svg></span>
+              <span class="voice-index">VOICE 02</span>
+            </div>
+            <div class="voice-quote-icon" aria-hidden="true">“</div>
+            <p>太陽光パネル導入前の打ち合わせでは、こちらの疑問一つひとつに丁寧にお答えいただき、補助金の金額も考慮したうえで、パネルの設置量や蓄電池の容量など最適なプランをご提案くださいました。</p>
+            <p>導入から5か月が経ち、現在は発電量や蓄電池の残量などをスマートフォンで日々細かく確認しています。</p>
+            <p>酷暑でエアコンを止めることができなかった8月でも、ソーラー導入前と比べて電気代が圧倒的に安くなり、その効果を実感しています。</p>
+          </article>
+          <article class="voice-card">
+            <div class="voice-meta">
+              <span class="voice-person-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-user" /></svg></span>
+              <span class="voice-index">VOICE 03</span>
+            </div>
+            <div class="voice-quote-icon" aria-hidden="true">“</div>
+            <p>ハチドリさんのソーラーパネル&amp;蓄電池を前提に、日当たり効率がよく高断熱の住宅を設計していただきました。</p>
+            <p>夏はエアコン付けっぱなしでも電気代が跳ね上がることはなく、いい投資ができたと思います。</p>
+            <p>地球に優しい住まい方についてご興味があれば、ぜひハチドリさんにご相談を！</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section flow" id="flow" aria-labelledby="flow-title">
+        <div class="section-head">
+          <p class="eyebrow">STEP</p>
+          <h2 id="flow-title">利用開始までのステップ</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home" /></svg></div>
+            <span>01</span>
+            <strong>ご自宅に設置できるか確認</strong>
+            <p>屋根の条件や日当たり、電気の使い方などを確認します。</p>
+          </article>
+          <article>
+            <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg></div>
+            <span>02</span>
+            <strong>どれくらい電気をまかなえるか試算</strong>
+            <p>発電量やご家庭で使う割合、蓄電池の有無をもとにシミュレーションします。</p>
+          </article>
+          <article>
+            <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-clipboard" /></svg></div>
+            <span>03</span>
+            <strong>補助金が活用できるか確認</strong>
+            <p>東京都の補助金が利用できる場合は、お手続きの流れもあわせてご案内します。</p>
+          </article>
+          <article>
+            <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-tools" /></svg></div>
+            <span>04</span>
+            <strong>ご契約・工事・ご利用開始</strong>
+            <p>お申し込みから設置工事まで、安心して進められるようサポートします。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq" aria-labelledby="faq-title">
+        <div class="section-head compact">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">よくある質問</h2>
+        </div>
+        <div class="faq-grid">
+          <details open>
+            <summary><span class="faq-icon yellow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-clipboard" /></svg></span><span>お申し込みには条件がありますか？</span></summary>
+            <div class="faq-answer">
+              <p>お申し込みいただける方の条件は以下のとおりです。</p>
+              <ul class="faq-list">
+                <li>新築または既築の戸建て住宅を個人で所有されている方<sup>※1</sup></li>
+                <li>お申し込み時の年齢が65歳未満の方（65歳以上の方はご相談ください）</li>
+              </ul>
+              <p class="faq-note">※1 原則として、リースプランは建物所有者が個人の方を対象としています。</p>
+              <p class="faq-note">お申し込み者または建物所有者が個人事業主・法人の場合は、リースプランをご利用いただけない場合があります。詳しくはお問い合わせください。</p>
+            </div>
+          </details>
+          <details>
+            <summary><span class="faq-icon sky"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home" /></svg></span><span>設置に適さない屋根はありますか？</span></summary>
+            <div class="faq-answer">
+              <p>屋根の向きや状態、周辺環境によっては、十分な発電量が見込めない場合や、安全面から設置が難しい場合があります。例えば、以下のようなケースです。</p>
+              <ul class="faq-list roof-list">
+                <li>
+                  <strong>北向きの屋根</strong>
+                  <span>北向きの屋根は、十分な発電量が見込めない場合があります。また、反射光による周辺への影響に配慮が必要なため、設置の際には事前に同意書のご提出をお願いしています。</span>
+                </li>
+                <li>
+                  <strong>周辺の建物や電線などで影がかかりやすい屋根</strong>
+                  <span>近隣に高い建物や電線などがある場合、屋根に影がかかる時間が長くなり、十分な発電量が見込めないことがあります。設置可否については個別に確認いたしますので、まずはお気軽にご相談ください。</span>
+                </li>
+                <li>
+                  <strong>築30年以上で、屋根の葺き替えやメンテナンスを行っていない屋根</strong>
+                  <span>築年数による制限はありませんが、築30年以上で屋根のメンテナンスを行っていない場合は、防水性や安全性の観点から設置が難しいことがあります。ご不安な場合は、お申し込み前にお気軽にご相談ください。</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary><span class="faq-icon mint"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-tools" /></svg></span><span>設置工事にはどれくらいの期間がかかりますか？</span></summary>
+            <div class="faq-answer">
+              <p>工事は、足場の設置から太陽光パネル・蓄電池の設置、電気工事、足場の解体まで含めて、一般的に1〜3日程度で完了します。</p>
+              <p>なお、屋根の形状や設備内容、天候、工事日程の調整状況により前後する場合があります。</p>
+            </div>
+          </details>
+          <details>
+            <summary><span class="faq-icon yellow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-sun" /></svg></span><span>雨や曇りの日でも電気は使えますか？</span></summary>
+            <div class="faq-answer">
+              <p>雨や曇りの日は発電量が少なくなりますが、電気が使えなくなることはありません。</p>
+              <p>発電量が足りない場合は、これまでと同じように電力会社から電気が供給されます。また、蓄電池を設置している場合は、ためておいた電気を活用することもできます。</p>
+            </div>
+          </details>
+          <details>
+            <summary><span class="faq-icon mint"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-shield" /></svg></span><span>契約期間中に故障した場合はどうなりますか？</span></summary>
+            <div class="faq-answer">
+              <p>契約期間中に機器の故障が発生した場合は、無償で対応いたします。また、機器には15年間、太陽光パネルには25年間の保証がありますので、安心してご利用いただけます。</p>
+            </div>
+          </details>
+          <details>
+            <summary><span class="faq-icon yellow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-tools" /></svg></span><span>途中解約はできますか？</span></summary>
+            <div class="faq-answer">
+              <p>契約期間は15年間のため、原則として途中解約はできません。ただし、お引っ越しなどやむを得ない事情がある場合は、残りのリース料金をお支払いいただいたうえで、設備を買い取っていただくことで解約が可能です。詳しくは個別にご相談ください。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="simulation-section" id="form" aria-labelledby="form-title">
+        <div class="simulation-head">
+          <p>わが家でつくると、いくら変わる？</p>
+          <h2 id="form-title">まずは無料シミュレーション</h2>
+          <div class="simulation-checks" aria-label="無料シミュレーションで確認できること">
+            <span>設置可否</span>
+            <span>電気代の変化</span>
+            <span>補助金の活用</span>
+          </div>
+          <p class="simulation-checks-lead">3つをまとめて確認できます！</p>
+        </div>
+        <div class="simulation-cta">
+          <a href="https://hachidori-denryoku.jp/solar/" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg>
+            <span class="cta-text">無料でシミュレーション</span>
+          </a>
+          <p>ご自宅に設置できるか、電気代がどれくらい変わるか、補助金が活用できるかを無料でシミュレーションできます。お申込やご契約ではございませんので、お気軽にお試しください。</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-cta">
+      <a href="#form">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg>
+        <span class="cta-text">無料でシミュレーション</span>
+      </a>
+    </div>
+  </body>
+</html>
