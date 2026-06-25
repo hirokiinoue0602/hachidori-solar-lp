@@ -879,6 +879,7 @@ p {
 .lease-flow-card {
   display: grid;
   gap: 5px;
+  align-content: center;
   min-height: 86px;
   padding: 14px;
   border-radius: 8px;
