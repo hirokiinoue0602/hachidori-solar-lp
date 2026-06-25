@@ -856,6 +856,67 @@ p {
   line-height: 1.75;
 }
 
+.grant-lease-flow {
+  align-items: start;
+  gap: 14px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(218, 250, 36, 0.28), rgba(255, 255, 255, 0.98));
+  border-color: rgba(1, 81, 71, 0.18);
+}
+
+.lease-flow-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.lease-flow-steps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.lease-flow-card {
+  display: grid;
+  gap: 5px;
+  min-height: 86px;
+  padding: 14px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid rgba(1, 81, 71, 0.13);
+}
+
+.lease-flow-card span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.lease-flow-card b {
+  color: var(--green);
+  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.lease-flow-card.is-highlight {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.lease-flow-card.is-highlight span,
+.lease-flow-card.is-highlight b {
+  color: var(--white);
+}
+
+.lease-flow-arrow {
+  color: var(--green);
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
 .grant-cta {
   grid-column: 1 / -1;
   display: flex;
@@ -3111,6 +3172,26 @@ p {
   .grant-lease-note p {
     font-size: 0.8rem;
     line-height: 1.65;
+  }
+
+  .lease-flow-steps {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .lease-flow-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+    font-size: 1.15rem;
+  }
+
+  .lease-flow-card {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  .lease-flow-card b {
+    font-size: clamp(1.28rem, 7vw, 1.7rem);
   }
 
 }
