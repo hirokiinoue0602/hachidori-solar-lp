@@ -77,10 +77,10 @@ svg {
 }
 
 .site-header {
-  position: sticky;
+  position: relative;
   z-index: 20;
-  top: 0;
-  left: 0;
+  top: auto;
+  left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2377,7 +2377,7 @@ p {
 
 @media (max-width: 920px) {
   .site-header {
-    top: 0;
+    top: auto;
     width: 100%;
     min-height: 54px;
     padding: 7px 16px;
