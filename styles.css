@@ -17,6 +17,8 @@
   --line: rgba(35, 25, 22, 0.12);
   --shadow: 0 22px 60px rgba(1, 81, 71, 0.13);
   --content: 1160px;
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-heading: "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
 }
 
 *,
@@ -33,7 +35,7 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--paper);
-  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-family: var(--font-body);
   line-height: 1.65;
   overflow-x: hidden;
 }
@@ -213,7 +215,7 @@ summary,
 .grant-cta a,
 .mobile-cta a,
 .simulation-cta a {
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   color: var(--ink);
   line-height: 1.2;
   overflow-wrap: anywhere;
@@ -259,7 +261,7 @@ h1 {
   padding: 18px;
   border-radius: 50%;
   color: var(--white);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 900;
   line-height: 1.25;
   text-align: center;
@@ -510,7 +512,7 @@ h1 {
 .benefit-catch {
   margin: 0;
   color: var(--green);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(1.2rem, 2.1vw, 1.72rem);
   font-weight: 900;
   line-height: 1.55;
@@ -580,7 +582,7 @@ h1 {
 
 .overview-points strong {
   color: var(--ink);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-size: 1.12rem;
   font-weight: 900;
 }
@@ -767,7 +769,7 @@ p {
 
 .grant-points strong {
   color: var(--green);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(1.35rem, 2.2vw, 1.8rem);
   font-weight: 900;
   line-height: 1.08;
@@ -896,7 +898,7 @@ p {
 
 .lease-flow-card b {
   color: var(--green);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(1.45rem, 3vw, 2.1rem);
   font-weight: 900;
   line-height: 1.1;
@@ -1919,7 +1921,7 @@ p {
 
 .voice-proof strong {
   color: #169baa;
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(3.6rem, 7vw, 5.3rem);
   font-weight: 900;
   line-height: 1;
@@ -2021,7 +2023,7 @@ p {
 .bill-saving strong span {
   display: inline-block;
   margin-left: 4px;
-  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-body);
   font-size: 0.34em;
   font-weight: 900;
 }
@@ -2281,7 +2283,7 @@ p {
   justify-content: center;
   gap: 14px;
   color: var(--lime);
-  font-family: "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 900;
 }
 
