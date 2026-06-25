@@ -77,22 +77,20 @@ svg {
 }
 
 .site-header {
-  position: fixed;
+  position: sticky;
   z-index: 20;
-  top: 18px;
-  left: 50%;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(calc(100% - 32px), var(--content));
-  min-height: 62px;
-  padding: 8px 14px 8px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 14px 36px rgba(1, 81, 71, 0.12);
-  transform: translateX(-50%);
-  backdrop-filter: blur(14px);
+  width: 100%;
+  min-height: 58px;
+  padding: 8px max(16px, calc((100vw - var(--content)) / 2));
+  border-bottom: 1px solid rgba(35, 25, 22, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 24px rgba(1, 81, 71, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .brand {
@@ -163,7 +161,7 @@ svg {
   width: min(calc(100% - 32px), var(--content));
   min-height: min(760px, 86vh);
   margin: 0 auto;
-  padding: clamp(138px, 17vh, 176px) 0 54px;
+  padding: clamp(76px, 12vh, 126px) 0 54px;
 }
 
 .hero-main-copy {
@@ -2379,10 +2377,10 @@ p {
 
 @media (max-width: 920px) {
   .site-header {
-    top: 10px;
-    width: min(calc(100% - 20px), var(--content));
-    min-height: 56px;
-    padding: 7px 10px;
+    top: 0;
+    width: 100%;
+    min-height: 54px;
+    padding: 7px 16px;
   }
 
   .brand img {
@@ -2410,7 +2408,7 @@ p {
 
   .hero-copy {
     min-height: 680px;
-    padding: 108px 0 42px;
+    padding: 70px 0 42px;
   }
 
   h1 {
@@ -2597,12 +2595,11 @@ p {
 
 @media (max-width: 560px) {
   .site-header {
-    right: 10px;
-    left: 10px;
-    width: auto;
-    min-height: 50px;
-    padding: 6px 8px 6px 10px;
-    transform: none;
+    right: auto;
+    left: auto;
+    width: 100%;
+    min-height: 48px;
+    padding: 6px 14px;
   }
 
   .brand img {
@@ -2622,7 +2619,7 @@ p {
     width: calc(100vw - 28px);
     min-height: 560px;
     margin-top: 0;
-    padding: 88px 0 26px;
+    padding: 44px 0 26px;
     background: transparent;
     box-shadow: none;
     backdrop-filter: none;
