@@ -125,7 +125,7 @@ p {
 .hero-copy h1 {
   max-width: 12.5em;
   color: var(--white);
-  font-size: clamp(2.45rem, 4.5vw, 4.35rem);
+  font-size: clamp(2.3rem, 4.15vw, 4rem);
   font-weight: 700;
   line-height: 1.43;
   text-shadow: 0 3px 18px rgba(15, 48, 45, 0.34);
@@ -182,7 +182,7 @@ p {
 .energy-choice-heading h2 {
   max-width: 13em;
   color: #2c5551;
-  font-size: clamp(2.15rem, 3.65vw, 3.65rem);
+  font-size: clamp(2rem, 3.35vw, 3.35rem);
   font-weight: 700;
   line-height: 1.58;
 }
@@ -212,7 +212,7 @@ p {
 .section-head h2,
 .lease-plan-heading h2 {
   color: #2b514d;
-  font-size: clamp(2.1rem, 3.9vw, 3.55rem);
+  font-size: clamp(1.95rem, 3.55vw, 3.25rem);
   font-weight: 700;
   line-height: 1.55;
 }
@@ -248,7 +248,7 @@ p {
 .solar-benefit-copy h2 {
   max-width: 14em;
   color: #2b514d;
-  font-size: clamp(2.05rem, 3.7vw, 3.45rem);
+  font-size: clamp(1.92rem, 3.4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.55;
 }
@@ -677,7 +677,7 @@ p {
 
   .hero-copy h1 {
     max-width: 11em;
-    font-size: clamp(2.05rem, 6.5vw, 3rem);
+    font-size: clamp(1.95rem, 6vw, 2.8rem);
     line-height: 1.45;
   }
 
@@ -770,7 +770,7 @@ p {
 
   .hero-copy h1 {
     max-width: 10.5em;
-    font-size: clamp(1.78rem, 8.2vw, 2.2rem);
+    font-size: clamp(1.7rem, 7.7vw, 2.05rem);
     line-height: 1.48;
   }
 
@@ -803,7 +803,7 @@ p {
   .section-head h2,
   .solar-benefit-copy h2,
   .lease-plan-heading h2 {
-    font-size: clamp(1.72rem, 8vw, 2.1rem);
+    font-size: clamp(1.62rem, 7.4vw, 1.98rem);
     line-height: 1.58;
   }
 
