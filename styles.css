@@ -454,6 +454,48 @@ h1 {
   font-size: initial;
 }
 
+.energy-choice {
+  width: 100%;
+  padding: clamp(70px, 8vw, 108px) 16px;
+  border-bottom: 1px solid rgba(1, 81, 71, 0.1);
+  background: var(--white);
+}
+
+.energy-choice-inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1fr);
+  gap: clamp(44px, 7vw, 96px);
+  align-items: start;
+  width: min(100%, var(--content));
+  margin: 0 auto;
+}
+
+.energy-choice-heading {
+  display: grid;
+  gap: 18px;
+}
+
+.energy-choice-heading h2 {
+  font-size: clamp(1.85rem, 3.25vw, 3.2rem);
+  line-height: 1.42;
+}
+
+.energy-choice-copy {
+  display: grid;
+  gap: 20px;
+  color: var(--text);
+  font-size: clamp(1rem, 1.25vw, 1.08rem);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.energy-choice-pivot {
+  color: var(--green);
+  font-family: var(--font-heading);
+  font-size: clamp(1.18rem, 1.8vw, 1.5rem);
+  font-weight: 900;
+}
+
 .solar-overview {
   padding-top: 72px;
   padding-bottom: 48px;
@@ -500,16 +542,19 @@ h1 {
 }
 
 .solar-benefit-copy {
+  width: 100%;
   max-width: none;
   justify-items: center;
   text-align: center;
 }
 
 .solar-benefit-copy h2 {
+  width: 100%;
   max-width: 18em;
 }
 
 .benefit-catch {
+  width: 100%;
   margin: 0;
   color: var(--green);
   font-family: var(--font-heading);
@@ -519,10 +564,21 @@ h1 {
   letter-spacing: 0;
 }
 
+.benefit-description {
+  width: 100%;
+  max-width: 760px;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(0.98rem, 1.25vw, 1.08rem);
+  font-weight: 500;
+  line-height: 1.9;
+}
+
 .benefit-image-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+  align-items: start;
 }
 
 .benefit-image-card {
@@ -538,6 +594,16 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.benefit-image-card figcaption {
+  padding: 16px 18px 18px;
+  border-top: 1px solid rgba(1, 81, 71, 0.1);
+  background: #f2faf7;
+  color: var(--green);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.75;
 }
 
 .overview-points {
@@ -1516,6 +1582,137 @@ p {
   color: var(--green);
 }
 
+.lease-plan-section {
+  width: 100%;
+  padding: clamp(76px, 8vw, 108px) 16px;
+  border-top: 1px solid rgba(1, 81, 71, 0.08);
+  border-bottom: 1px solid rgba(1, 81, 71, 0.12);
+  background: var(--mist);
+}
+
+.lease-plan-inner {
+  width: min(100%, var(--content));
+  margin: 0 auto;
+}
+
+.lease-plan-heading {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.lease-plan-heading .eyebrow {
+  justify-content: center;
+}
+
+.lease-plan-heading h2 {
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  line-height: 1.34;
+}
+
+.lease-plan-heading h2 strong {
+  color: var(--green);
+  font-size: 1.08em;
+  font-weight: 900;
+}
+
+.lease-plan-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(42px, 7vw, 88px);
+  align-items: center;
+  width: min(100%, 980px);
+  margin: 0 auto;
+}
+
+.lease-plan-visual {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  margin: 0;
+}
+
+.lease-plan-visual img {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+}
+
+.lease-plan-visual figcaption {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  width: min(100%, 340px);
+  padding: 16px 20px;
+  border: 1px solid rgba(1, 81, 71, 0.16);
+  border-radius: 8px;
+  background: var(--white);
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(1, 81, 71, 0.08);
+}
+
+.lease-plan-visual figcaption span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.lease-plan-visual figcaption strong {
+  color: var(--green);
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.lease-plan-copy {
+  display: grid;
+  gap: 22px;
+  color: var(--text);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.lease-plan-lead {
+  color: var(--ink);
+  font-size: clamp(1.08rem, 1.7vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.lease-plan-lead strong {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.grant-cta.lease-plan-cta {
+  gap: 20px;
+  width: min(100%, 760px);
+  margin: clamp(42px, 6vw, 64px) auto 0;
+}
+
+.lease-plan-cta-message {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.02rem, 1.7vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.lease-plan-cta-message strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--green);
+  font-family: var(--font-heading);
+  font-size: clamp(1.22rem, 2.4vw, 1.72rem);
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 .voice-section {
   width: 100%;
   max-width: none;
@@ -2485,10 +2682,12 @@ p {
   }
 
   .quick-strip,
+  .energy-choice-inner,
   .overview-panel,
   .overview-points,
   .benefit-image-grid,
   .intro-grid,
+  .lease-plan-layout,
   .energy-diagram,
   .market-panel,
   .voice-grid,
@@ -2507,6 +2706,39 @@ p {
 
   .overview-panel {
     padding: 24px;
+  }
+
+  .energy-choice {
+    padding: 68px 24px;
+  }
+
+  .energy-choice-inner {
+    gap: 34px;
+  }
+
+  .energy-choice-heading h2 {
+    max-width: 16em;
+  }
+
+  .lease-plan-section {
+    padding: 68px 24px;
+  }
+
+  .lease-plan-heading {
+    margin-bottom: 34px;
+  }
+
+  .lease-plan-layout {
+    gap: 34px;
+  }
+
+  .lease-plan-visual img {
+    width: min(100%, 260px);
+  }
+
+  .lease-plan-copy {
+    width: min(100%, 720px);
+    margin: 0 auto;
   }
 
   .overview-points article {
@@ -2723,6 +2955,93 @@ p {
 
   .hero-copy-image {
     display: none;
+  }
+
+  .energy-choice {
+    padding: 54px 16px 60px;
+  }
+
+  .energy-choice-inner {
+    gap: 28px;
+  }
+
+  .energy-choice-heading {
+    gap: 14px;
+  }
+
+  .energy-choice-heading h2 {
+    font-size: clamp(1.62rem, 7.2vw, 2rem);
+    line-height: 1.48;
+  }
+
+  .energy-choice-copy {
+    gap: 17px;
+    font-size: 0.94rem;
+    line-height: 1.9;
+  }
+
+  .benefit-description {
+    font-size: 0.92rem;
+    line-height: 1.85;
+  }
+
+  .benefit-image-card figcaption {
+    padding: 13px 14px 15px;
+    font-size: 0.82rem;
+  }
+
+  .lease-plan-section {
+    padding: 56px 16px 62px;
+  }
+
+  .lease-plan-heading {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .lease-plan-heading h2 {
+    font-size: clamp(1.7rem, 8vw, 2.15rem);
+    line-height: 1.4;
+  }
+
+  .lease-plan-layout {
+    gap: 28px;
+  }
+
+  .lease-plan-visual img {
+    width: min(100%, 220px);
+  }
+
+  .lease-plan-visual figcaption {
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  .lease-plan-copy {
+    gap: 18px;
+    font-size: 0.94rem;
+    line-height: 1.9;
+  }
+
+  .lease-plan-lead {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+  .grant-cta.lease-plan-cta {
+    gap: 18px;
+    margin-top: 38px;
+  }
+
+  .lease-plan-cta-message {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .lease-plan-cta-message strong {
+    margin-top: 6px;
+    font-size: 1.18rem;
+    line-height: 1.55;
   }
 
   .hero-badges {

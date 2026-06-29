@@ -10,8 +10,9 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20260626-043500" />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=20260629-183000" />
+    <link rel="stylesheet" href="./theme-natural.css?v=20260629-190000" />
   </head>
   <body>
     <svg class="svg-sprite" aria-hidden="true">
@@ -96,7 +97,7 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-copy">
           <div class="hero-main-copy">
-            <p class="label-pill hero-area-label">東京都在住の方限定</p>
+            <p class="label-pill hero-area-label">東京都お住まいの方へ</p>
             <h1 id="hero-title">
               太陽光発電で<br />家計にも環境にも、<br class="mobile-break" /><span class="nobr">やさしい暮らしへ</span>
             </h1>
@@ -104,24 +105,40 @@
           <ul class="hero-badges" aria-label="ソーラーと蓄電池の主なメリット">
             <li class="hero-badge hero-badge-savings"><span>電気代</span><strong>80%削減</strong></li>
             <li class="hero-badge hero-badge-battery"><span>蓄電池で</span><strong>災害時も安心</strong></li>
-            <li class="hero-badge hero-badge-subsidy"><span>補助金</span><strong>60%還元</strong></li>
+            <li class="hero-badge hero-badge-subsidy"><strong>補助金対象</strong></li>
           </ul>
+        </div>
+      </section>
+
+      <section class="energy-choice" aria-labelledby="energy-choice-title">
+        <div class="energy-choice-inner">
+          <div class="energy-choice-heading">
+            <h2 id="energy-choice-title">自然エネルギーを「選ぶ」だけでなく、「つくる」という選択。</h2>
+          </div>
+          <div class="energy-choice-copy">
+            <p>ハチドリ電力はこれまで、自然エネルギー100%の電気を届けることで、未来を守る選択を広げてきました。</p>
+            <p class="energy-choice-pivot">そして今、その一歩先へ。</p>
+            <p>電気を買うだけではなく、<br />自分でつくり、ためて、使う暮らし。</p>
+            <p>東京都では補助金制度も<br />充実しているいま、</p>
+            <p>太陽光発電と蓄電池で<br />毎月の電気代をおさえながら、<br />自然の力を活かす暮らしを<br />始めてみませんか？</p>
+          </div>
         </div>
       </section>
 
       <section class="section solar-overview" aria-labelledby="solar-overview-title">
         <div class="overview-panel solar-benefit-panel">
           <div class="overview-copy solar-benefit-copy">
-            <p class="eyebrow">MERIT</p>
-            <h2 id="solar-overview-title">ソーラー+蓄電池を導入するメリット</h2>
-            <p class="benefit-catch">余った電気を貯めて、安心してお得に暮らせます</p>
+            <h2 id="solar-overview-title">電気を買わない暮らしとは？</h2>
+            <p class="benefit-catch">電気代高騰の今、最大の節約は<br />「電気を買わない」こと。</p>
+            <p class="benefit-description">太陽光発電と蓄電池をセットで導入することで、ほぼ1日中太陽光でつくった電気だけで暮らせます。</p>
           </div>
           <div class="benefit-image-grid" aria-label="ソーラーと蓄電池を導入するメリット">
             <figure class="benefit-image-card">
-              <img src="./images/昼.png?v=20260625-121500" alt="昼に太陽光で発電して余った電気を貯めるイメージ" />
+              <img src="./images/昼.png?v=20260629-164500" alt="昼に太陽光で発電して余った電気を貯めるイメージ" />
             </figure>
-            <figure class="benefit-image-card">
-              <img src="./images/夜.png?v=20260625-121500" alt="夜に蓄電池の電気を使うイメージ" />
+            <figure class="benefit-image-card has-caption">
+              <img src="./images/夜.png?v=20260629-164500" alt="夜に蓄電池の電気を使うイメージ" />
+              <figcaption>災害や万が一の停電時でも、冷蔵庫や照明など生活に必要な電気を確保できます。</figcaption>
             </figure>
           </div>
         </div>
@@ -129,8 +146,7 @@
 
       <section class="section energy-map" id="benefit" aria-labelledby="benefit-title">
         <div class="section-head compact">
-          <p class="eyebrow">WITH HACHIDORI</p>
-          <h2 id="benefit-title">電気を買わない<br />未来の暮らし</h2>
+          <h2 id="benefit-title">昼は我が家で発電、<br />足りない分はハチドリで。</h2>
         </div>
         <div class="market-panel" aria-label="自宅でまかなう電気と節約のイメージ">
           <div class="market-image-grid">
@@ -195,8 +211,7 @@
 
       <section class="section intro" aria-labelledby="intro-title">
         <div class="section-head">
-          <p class="eyebrow">TOKYO SUBSIDY</p>
-          <h2 id="intro-title">東京都の補助金を活用することで、導入費用を削減できます</h2>
+          <h2 id="intro-title">東京都の補助金で「いま」はじめやすく。</h2>
         </div>
         <div class="intro-grid">
           <div class="grant-visual" id="grant">
@@ -205,24 +220,8 @@
             </figure>
             <ul class="subsidy-fineprint">
               <li>概算初期費用には、設備機器費と標準工事費が含まれております。ソーラーパネル積載量や蓄電容量、各現場状況によって費用が変動します。</li>
-              <li>「約200万円補助金還元」の内訳について: 太陽光4.6kW・蓄電池14kWhの導入時: 初期費用約240万円(税込)に対し、東京都の補助金を活用の場合、約200万円の補助が見込まれるケースを基に算出しています。(既存住宅の場合)</li>
+              <li>「約200万円補助金還元」の内訳について: 太陽光4.6kW・蓄電池14kWhの導入時: 初期費用約330万円(税込)に対し、東京都の補助金を活用の場合、約200万円の補助が見込まれるケースを基に算出しています。(既存住宅の場合)</li>
             </ul>
-            <div class="grant-lease-note grant-lease-flow" aria-label="補助金とリースプランを活用した初期費用の流れ">
-              <span class="grant-lease-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-yen" /></svg></span>
-              <div class="lease-flow-copy">
-                <strong>補助金に加えて、リースプランなら初期費用0円で導入できます。</strong>
-                <div class="lease-flow-steps">
-                  <div class="lease-flow-card">
-                    <span>初期費用</span>
-                    <b>約130万円</b>
-                  </div>
-                  <span class="lease-flow-arrow" aria-hidden="true">→</span>
-                  <div class="lease-flow-card is-highlight">
-                    <b>初期費用0円</b>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="grant-cta">
               <p class="grant-support-note">補助金申請をサポート</p>
               <a href="https://solar-life.com/solar/#solar-simulation" target="_blank" rel="noreferrer">
@@ -234,10 +233,41 @@
         </div>
       </section>
 
+      <section class="lease-plan-section" id="lease-plan" aria-labelledby="lease-plan-title">
+        <div class="lease-plan-inner">
+          <div class="lease-plan-heading">
+            <h2 id="lease-plan-title">リースプランの選択で<br /><strong>初期費用は0円！</strong></h2>
+          </div>
+          <div class="lease-plan-layout">
+            <figure class="lease-plan-visual">
+              <img src="./images/lease.webp?v=20260629-164800" alt="太陽光発電と蓄電池を初期費用0円で導入するリースプランのイメージ" />
+              <figcaption>
+                <span>パネル一式&amp;工事費含む</span>
+                <strong>初期費用0円</strong>
+              </figcaption>
+            </figure>
+            <div class="lease-plan-copy">
+              <p class="lease-plan-lead">ハチドリ電力がご紹介する太陽光発電・蓄電池サービスは、姉妹企業の<strong>「ハチドリソーラー」</strong>が提供しています。</p>
+              <p>ご相談から設計、施工、アフターサポートまでをワンストップで対応。</p>
+              <p>施工も信頼できるパートナーと密に連携し、大切なお住まいへの設置を責任を持ってサポートします。</p>
+            </div>
+          </div>
+          <div class="grant-cta lease-plan-cta">
+            <p class="lease-plan-cta-message">
+              電気代がいくら削減できるか試算してみませんか？
+              <strong>98％の方が電気代80％節約に成功しています</strong>
+            </p>
+            <a href="https://solar-life.com/solar/#solar-simulation" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg>
+              <span class="cta-text">無料でシミュレーション</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="voice-section" id="voice" aria-labelledby="voice-title">
         <div class="section-head compact">
-          <p class="eyebrow">USER VOICE</p>
-          <h2 id="voice-title">利用者の声</h2>
+          <h2 id="voice-title">実際に設置済みの<br />お客様の声</h2>
         </div>
         <div class="voice-grid google-review-grid">
           <figure class="google-review-card">
@@ -251,7 +281,6 @@
 
       <section class="section flow" id="flow" aria-labelledby="flow-title">
         <div class="section-head">
-          <p class="eyebrow">STEP</p>
           <h2 id="flow-title">利用開始までのステップ</h2>
         </div>
         <div class="timeline">
@@ -284,7 +313,6 @@
 
       <section class="section faq" aria-labelledby="faq-title">
         <div class="section-head compact">
-          <p class="eyebrow">FAQ</p>
           <h2 id="faq-title">よくある質問</h2>
         </div>
         <div class="faq-grid">
@@ -349,25 +377,6 @@
         </div>
       </section>
 
-      <section class="simulation-section" id="form" aria-labelledby="form-title">
-        <div class="simulation-head">
-          <p>わが家でつくると、いくら変わる？</p>
-          <h2 id="form-title">まずは無料シミュレーション</h2>
-          <div class="simulation-checks" aria-label="無料シミュレーションで確認できること">
-            <span>設置可否</span>
-            <span>電気代の変化</span>
-            <span>補助金の活用</span>
-          </div>
-          <p class="simulation-checks-lead">3つをまとめて確認できます！</p>
-        </div>
-        <div class="simulation-cta">
-          <a href="https://solar-life.com/solar/#solar-simulation" target="_blank" rel="noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calculator" /></svg>
-            <span class="cta-text">無料でシミュレーション</span>
-          </a>
-          <p>ご自宅に設置できるか、電気代がどれくらい変わるか、補助金が活用できるかを無料でシミュレーションできます。お申込やご契約ではございませんので、お気軽にお試しください。</p>
-        </div>
-      </section>
     </main>
 
     <div class="mobile-cta">
